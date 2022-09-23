@@ -19,4 +19,32 @@ public class HelloController {
     }
 
 
+    @GetMapping("/")
+    public String bootstap(){
+
+        return """
+               
+                <!doctype html>
+                <html lang="es">
+                  <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <title>Demo App de Giuliano</title>
+                  </head>
+                  <body>
+                    <h1>Hola desde Bootstrap</h1>
+                    <form>
+                        <a href="https://www.facebook.com/">
+                            <input type="button" value="click here">
+                        </a>
+                    </form>
+                  </body>
+                </html>
+                
+                
+                
+                """;
+    }
+
+
 }
